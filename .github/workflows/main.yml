@@ -1,1 +1,32 @@
+name: "Hello world workflow"
+  
+  on:
+    push:
+    
+jobs:
+    print_date_ubuntut
+    name: Print Date Ubuntu! 
+    runs-on: ubuntu- latest
 
+    steps:
+    nane: Hello world Ubuntu! 
+    run: echo 'Hello world'
+    
+    print_date_world_windows:
+      name: Print date Windows! 
+      runs-on: windows-latest
+
+  steps:
+    - name: Hello world Windows!
+      run: echo 'Hello world*
+
+  print_date_world_nacos:
+      name: Print Date Macos! 
+      runs-on: macos-latest 
+      needs:
+      - print_hello_world_ubuntu
+      - print_hello_world_windows
+
+      steps:
+      name: Print date Macos!
+      run: date
