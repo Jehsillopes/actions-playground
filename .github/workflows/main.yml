@@ -3,7 +3,7 @@ name: "Exercicio 1 jess"
 on:
     push:
     
-  jobs:
+jobs:
   print_date_ubuntut:
     name: Print Date Ubuntu! 
     runs-on: ubuntu- latest
@@ -28,16 +28,16 @@ on:
          - name: Print Date MacOs!
       run: date
       
-  print_date_final:
-      name: Print Date Final
+      print_date_final:
+          name: Print Date Final
       run-on: ubuntu-latest
       
       needs:
       - print_date_ubuntu
       - print_date_windows
       - print_date_macOs
-      
-    steps:
-    name: Print date final!
-    run: date
+
+  steps:
+        name: Print date final!
+        run: date
       
