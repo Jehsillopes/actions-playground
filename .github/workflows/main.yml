@@ -37,7 +37,7 @@ jobs:
       - print_date_windows
       - print_date_macOs
       
-    steps:
+  steps:
         name: Print date final!
         run: date
       
