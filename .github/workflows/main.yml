@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu- latest
 
     steps:
-    name: Print Date Ubuntu! 
+    - name: Print Ubuntu! 
     run: date
     
   print_date_windows:
@@ -17,15 +17,15 @@ jobs:
       runs-on: windows-latest
 
   steps:
-    - name: Print Windows!
+      name: Print Windows!
       run: date
 
   print_date_macOs:
       name: Print Date MacOs! 
       runs-on: macos-latest 
 
-  steps:
-     - name: Print Date MacOs!
+      steps:
+          name: Print Date MacOs!
       run: date
       
   print_date_final:
@@ -38,6 +38,6 @@ jobs:
       - print_date_macOs
       
     steps:
-    - name: Print date final!
-      run: date
+        name: Print date final!
+        run: date
       
