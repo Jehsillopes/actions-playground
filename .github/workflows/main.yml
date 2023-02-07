@@ -1,6 +1,6 @@
 name: "Exercicio 1 jess"
   
-  on:
+on:
     push:
     
 jobs:
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu- latest
 
     steps:
-    name: Print Date Ubuntu! 
+    name: Print Ubuntu! 
     run: date
     
   print_date_windows:
@@ -17,15 +17,15 @@ jobs:
       runs-on: windows-latest
 
   steps:
-    - name: Print date Windows!
+    - name: Print Windows!
       run: date
 
-  print_date_macos:
+  print_date_macOs:
       name: Print Date MacOs! 
       runs-on: macos-latest 
 
   steps:
-     - name: Print date MacOs!
+     - name: Print MacOs!
       run: date
       
   print_date_final:
@@ -35,7 +35,7 @@ jobs:
       needs:
       - print_date_ubuntu
       - print_date_windows
-      - print_date_macos
+      - print_date_macOs
       
     steps:
     - name: Print date final!
