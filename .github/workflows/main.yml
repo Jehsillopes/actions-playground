@@ -13,19 +13,19 @@ jobs:
     run: date
     
   print_date_windows:
-      name: Print Date Windows! 
-      runs-on: windows-latest
+      - name: Print Date Windows! 
+        runs-on: windows-latest
 
   steps:
-      name: Print Windows!
-      run: date
+      - name: Print Windows!
+        run: date
 
   print_date_macOs:
       name: Print Date MacOs! 
       runs-on: macos-latest 
 
       steps:
-          name: Print Date MacOs!
+         - name: Print Date MacOs!
       run: date
       
   print_date_final:
@@ -37,7 +37,7 @@ jobs:
       - print_date_windows
       - print_date_macOs
       
-  steps:
-        name: Print date final!
-        run: date
+    steps:
+    name: Print date final!
+    run: date
       
